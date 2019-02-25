@@ -11,7 +11,7 @@ class SQLRunner
   end
 
   def execute_insert_sql
-    sql = File.read('lib/insert.sql')
+    sql = File.read('lib/data.sql')
     @db.execute_batch(sql)
   end
 
